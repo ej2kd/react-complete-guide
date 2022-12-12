@@ -1,6 +1,7 @@
 import "./App.css";
 import Expense from "./components/Expenses/Expense";
 import React from "react";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 const App = () => {
   const expenses = [
@@ -28,7 +29,7 @@ const App = () => {
   return React.createElement(
     "div",
     {},
-    React.createElement("h2", {}, "Let's get started!"),
+    React.createElement(NewExpense, {}),
     React.createElement(Expense, { items: expenses })
   );
   // <div>
